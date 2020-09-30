@@ -10,16 +10,9 @@
  *
  */
 
-const transferFileName = n => {
-  let folderName = n,
-    fileName = n;
+const transferFileName = (n) =>
+  n.replace(/\./, "").replace(/\s/g, "-").toLowerCase().concat(".js");
 
-  folderName = folderName.replace(/\./, '').replace(/\s/g, '-').toLowerCase();
-  console.log(folderName);
+const fileName = transferFileName("");
 
-  fileName = folderName.replace(/\d+/, '').replace(/-/, '').concat('.js');
-  console.log(fileName);
-};
-
-const name = '';
-transferFileName(name);
+console.log(fileName);
