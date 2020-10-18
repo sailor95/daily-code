@@ -28,3 +28,11 @@ Phase 3:
 - greedy
 - binary search
 - backtracking
+
+## Good ones for review
+
+(TBD)
+
+## Weirdly tricky ones
+
+Array: 1277
