@@ -46,6 +46,19 @@ const numSplits2 = s => {
   return ans;
 };
 
+// 128 ms, faster than 67.54%
+const numSplits3 = s => {
+  const arr = new Array(s.length - 1).fill(0);
+  const [left, right] = [new Set(), new Set()];
+
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] += left.add(s[i]).size;
+    arr[arr.length - 1 - i] -= right.add(s[s.length - 1 - i]).size;
+  }
+
+  return arr.filter(i => i === 0).length;
+};
+
 const tester1 = 'aacaba';
 const tester2 = 'abcd';
 const tester3 = 'aaaaa';
@@ -55,3 +68,8 @@ console.log(numSplits2(tester1));
 console.log(numSplits2(tester2));
 console.log(numSplits2(tester3));
 console.log(numSplits2(tester4));
+
+console.log(numSplits3(tester1));
+console.log(numSplits3(tester2));
+console.log(numSplits3(tester3));
+console.log(numSplits3(tester4));
