@@ -31,8 +31,10 @@ Phase 3:
 
 ## Good ones for review
 
-(TBD)
+string:
+- 1525
 
 ## Weirdly tricky ones
 
-Array: 1277
+Array: 
+- 1277
