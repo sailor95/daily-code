@@ -38,3 +38,17 @@ string:
 
 Array: 
 - 1277
+
+
+## Rand notes
+
+- Depth-first
+- Breadth-first
+- Matching paraenthesis
+- Hash table
+- Pointer manipulation
+- Reverse linked list 
+- Sorting fundamentals
+- Recursion
+- Custom DS
+- Binary search
