@@ -50,7 +50,7 @@ Array:
 
 - Depth-first
 - Breadth-first
-- Matching paraenthesis
+- Matching parenthesis
 - Hash table
 - Pointer manipulation
 - Reverse linked list
