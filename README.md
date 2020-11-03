@@ -32,13 +32,18 @@ Phase 3:
 ## Good ones for review
 
 string:
+
 - 1525
+
+tree:
+
+- 1379
 
 ## Weirdly tricky ones
 
-Array: 
-- 1277
+Array:
 
+- 1277
 
 ## Rand notes
 
@@ -47,7 +52,7 @@ Array:
 - Matching paraenthesis
 - Hash table
 - Pointer manipulation
-- Reverse linked list 
+- Reverse linked list
 - Sorting fundamentals
 - Recursion
 - Custom DS
