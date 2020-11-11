@@ -9,12 +9,12 @@ Phase 1:
 - array
 - string
 - tree
+- hash table
 - linked-list
 - math
 
 Phase 2:
 
-- hash table
 - graph
 - two pointers
 - heap
