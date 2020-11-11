@@ -39,6 +39,7 @@ tree:
 
 - 1379
 - 1302
+- 1315 (The recursive ans. is beautiful.)
 
 ## Weirdly tricky ones
 
