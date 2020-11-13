@@ -41,6 +41,10 @@ tree:
 - 1302
 - 1315 (The recursive ans. is beautiful.)
 
+hash-table:
+
+- 739
+
 ## Weirdly tricky ones
 
 Array:
