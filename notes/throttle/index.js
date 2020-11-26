@@ -13,6 +13,17 @@ const throttle = fn => {
   };
 };
 
+function throttle2(func, time) {
+  let activeTime = 0;
+  return () => {
+    const current = Date.now();
+    if (current - activeTime > time) {
+      func.apply(this, arguments);
+      activeTime = Date.now();
+    }
+  };
+}
+
 const testerFunc = () => {
   console.log('Throttles event');
 };
