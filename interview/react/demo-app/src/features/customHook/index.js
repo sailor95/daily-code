@@ -1,6 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef } from 'react';
-
-import BackHomeButton from '../ui-utils/BackHomeButton';
 
 import styles from './style.module.scss';
 
@@ -21,10 +20,13 @@ function useCounter(start) {
       setCounter(counter + 1);
     };
 
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       update();
     }, 1500);
-    // eslint-disable-next-line
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, [counter]);
 
   return counter;
@@ -53,7 +55,6 @@ const CustomHook = () => {
           reset
         </button>
       </div>
-      <BackHomeButton />
     </div>
   );
 };

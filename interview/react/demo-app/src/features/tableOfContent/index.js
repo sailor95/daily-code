@@ -7,12 +7,17 @@ const TableOfContent = () => {
   return (
     <div className={styles.container}>
       <h1>Table Of Content</h1>
+
       <h3>React</h3>
       <ul>
         <li>
           <Link to="/react/customHook">Custom Hook</Link>
         </li>
+        <li>
+          <Link to="/react/setStateTriggerTime">setState Trigger Time</Link>
+        </li>
       </ul>
+
       <h3>Redux</h3>
       <ul>
         <li>

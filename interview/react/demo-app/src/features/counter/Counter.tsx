@@ -7,10 +7,10 @@ import {
   incrementAsync,
   selectCount,
 } from './counterSlice';
-import styles from './Counter.module.css';
-import BackHomeButton from '../ui-utils/BackHomeButton';
 
-export function Counter() {
+import styles from './Counter.module.css';
+
+const Counter = () => {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
@@ -56,7 +56,8 @@ export function Counter() {
           Add Async
         </button>
       </div>
-      <BackHomeButton />
     </div>
   );
-}
+};
+
+export default Counter;
