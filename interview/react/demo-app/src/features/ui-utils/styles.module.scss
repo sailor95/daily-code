@@ -1,0 +1,35 @@
+.back-home {
+  position: fixed;
+  bottom: 5rem;
+  left: 5rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  .button {
+    padding-right: 12px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    background: none;
+    background-color: lightgray;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    transition: all 0.15s;
+    appearance: none;
+  }
+
+  .button:hover,
+  .button:focus {
+    border: 2px solid darkslategrey;
+    color: darkslategrey;
+  }
+
+  .button:active {
+    background-color: rgba(112, 76, 182, 0.2);
+  }
+}
