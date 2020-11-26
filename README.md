@@ -31,19 +31,23 @@ Phase 3:
 
 ## Good ones for review
 
-string:
+### string
 
 - 1525
 
-tree:
+### tree
 
 - 1379
 - 1302
 - 1315 (The recursive ans. is beautiful.)
 
-hash-table:
+### hash-table
 
 - 739
+
+### math
+
+- 1641 (back-tracking / dynamic programming (動態規劃))
 
 ## Weirdly tricky ones
 
