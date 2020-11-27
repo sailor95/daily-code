@@ -1,9 +1,9 @@
+// O(2^N) -> why big num exploded? Stack-overflow
 const fibRecur = pos => {
   return pos <= 2 ? 1 : fib(pos - 1) + fib(pos - 2);
 };
 
-// O(n^2) -> why big num exploded? Stack-overflow
-
+// O(N)
 const fibIter = pos => {
   let prev2 = 0;
   let prev1 = 1;
@@ -18,7 +18,7 @@ const fibIter = pos => {
   return ans;
 };
 
-// memo
+// memo O(2N)
 const fibMemo = (num, memo = {}) => {
   if (memo[num]) return memo[num];
   if (num <= 1) return 1;
