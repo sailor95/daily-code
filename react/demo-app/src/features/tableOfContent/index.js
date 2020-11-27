@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import { REACT_ROUTES, REDUX_ROUTES } from '../../routes/constants';
+import LinkLister from './LinkLister';
 
 import styles from './styles.module.css';
 
@@ -8,22 +10,8 @@ const TableOfContent = () => {
     <div className={styles.container}>
       <h1>Table Of Content</h1>
 
-      <h3>React</h3>
-      <ul>
-        <li>
-          <Link to="/react/customHook">Custom Hook</Link>
-        </li>
-        <li>
-          <Link to="/react/setStateTriggerTime">setState Trigger Time</Link>
-        </li>
-      </ul>
-
-      <h3>Redux</h3>
-      <ul>
-        <li>
-          <Link to="/redux/counter">Redux Counter</Link>
-        </li>
-      </ul>
+      <LinkLister title="React" routeBase="react" routeData={REACT_ROUTES} />
+      <LinkLister title="Redux" routeBase="redux" routeData={REDUX_ROUTES} />
     </div>
   );
 };
