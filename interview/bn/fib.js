@@ -18,6 +18,14 @@ const fibIter = pos => {
   return ans;
 };
 
+// memo
+const fibMemo = (num, memo = {}) => {
+  if (memo[num]) return memo[num];
+  if (num <= 1) return 1;
+
+  return (memo[num] = fibMemo(num - 1, memo) + fibMemo(num - 2, memo));
+};
+
 // why 'infinity' -> exceed number roof -> use string
 
 console.log(fibIter(5000));
