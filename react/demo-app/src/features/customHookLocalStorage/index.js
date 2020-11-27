@@ -1,4 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
+
+import styles from '../ui-utils/styles-template.module.scss';
 
 const useLocalStorageState = (key, defaultValue) => {
   const [state, setState] = useState(() => {
@@ -26,8 +29,11 @@ const Counter = () => {
   const [count, setCount] = useLocalStorageState('my-app-count', 0);
 
   return (
-    <div>
+    <div className={styles.container}>
       <button onClick={() => setCount(count + 1)}>{count}</button>
+      <button style={{ marginLeft: '1rem' }} onClick={() => setCount(0)}>
+        Clear
+      </button>
     </div>
   );
 };

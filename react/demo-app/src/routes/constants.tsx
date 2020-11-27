@@ -3,6 +3,7 @@ import { ComponentType } from 'react';
 // react
 import Playground from '../features/_playground';
 import CustomHook from '../features/customHook';
+import CustomHookLocalStorage from '../features/customHookLocalStorage';
 import SetStateTriggerTime from '../features/setStateTriggerTime';
 
 // redux
@@ -20,7 +21,12 @@ export interface RouteData {
 }
 
 export const REACT_ROUTES: RouteData = {
-  order: ['playground', 'customHook', 'setStateTriggerTime'],
+  order: [
+    'playground',
+    'customHook',
+    'customHookLocalStorage',
+    'setStateTriggerTime',
+  ],
   data: {
     playground: {
       name: 'Playground',
@@ -31,6 +37,11 @@ export const REACT_ROUTES: RouteData = {
       name: 'Custom Hook',
       route: 'custom-hook',
       comp: CustomHook,
+    },
+    customHookLocalStorage: {
+      name: 'Custom Hook Local Storage Util',
+      route: 'custom-hook-local-storage',
+      comp: CustomHookLocalStorage,
     },
     setStateTriggerTime: {
       name: 'set State Trigger Time',
