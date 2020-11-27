@@ -2,8 +2,9 @@ import { ComponentType } from 'react';
 
 // react
 import Playground from '../features/_playground';
-import CustomHook from '../features/customHook';
-import CustomHookLocalStorage from '../features/customHookLocalStorage';
+import CounterHook from '../features/customHook/counterHook';
+import LocalStorageHook from '../features/customHook/localStorageHook';
+import AsyncLoadingHook from '../features/customHook/asyncLoadingHook';
 import SetStateTriggerTime from '../features/setStateTriggerTime';
 
 // redux
@@ -23,8 +24,9 @@ export interface RouteData {
 export const REACT_ROUTES: RouteData = {
   order: [
     'playground',
-    'customHook',
-    'customHookLocalStorage',
+    'counterHook',
+    'localStorageHook',
+    'asyncLoadingHook',
     'setStateTriggerTime',
   ],
   data: {
@@ -33,15 +35,20 @@ export const REACT_ROUTES: RouteData = {
       route: 'playground',
       comp: Playground,
     },
-    customHook: {
-      name: 'Custom Hook',
-      route: 'custom-hook',
-      comp: CustomHook,
+    counterHook: {
+      name: 'Counter Hook',
+      route: 'counter-hook',
+      comp: CounterHook,
     },
-    customHookLocalStorage: {
-      name: 'Custom Hook Local Storage Util',
-      route: 'custom-hook-local-storage',
-      comp: CustomHookLocalStorage,
+    localStorageHook: {
+      name: 'Local Storage Hook',
+      route: 'local-storage-hook',
+      comp: LocalStorageHook,
+    },
+    asyncLoadingHook: {
+      name: 'Async Loading Hook',
+      route: 'async-loading-hook',
+      comp: AsyncLoadingHook,
     },
     setStateTriggerTime: {
       name: 'set State Trigger Time',

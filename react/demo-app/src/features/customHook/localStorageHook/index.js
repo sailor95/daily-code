@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 
-import styles from '../ui-utils/styles-template.module.scss';
+import styles from '../../ui-utils/styles-template.module.scss';
 
 const useLocalStorageState = (key, defaultValue) => {
   const [state, setState] = useState(() => {
