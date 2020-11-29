@@ -7,6 +7,7 @@ import LocalStorageHook from '../features/customHook/localStorageHook';
 import AsyncLoadingHook from '../features/customHook/asyncLoadingHook';
 import SetStateTriggerTime from '../features/setStateTriggerTime';
 import ProperUseCallback from '../features/properUseCallback';
+import UseReducerHook from '../features/useReducerHook';
 
 // redux
 import Counter from '../features/counter/Counter';
@@ -29,6 +30,7 @@ export const REACT_ROUTES: RouteData = {
     'counterHook',
     'localStorageHook',
     'asyncLoadingHook',
+    'useReducerHook',
     'setStateTriggerTime',
     'properUseCallback',
   ],
@@ -52,6 +54,11 @@ export const REACT_ROUTES: RouteData = {
       name: 'Async Loading Hook',
       route: 'async-loading-hook',
       comp: AsyncLoadingHook,
+    },
+    useReducerHook: {
+      name: 'useReducer Hook',
+      route: 'use-reducer-hook',
+      comp: UseReducerHook,
     },
     setStateTriggerTime: {
       name: 'set State Trigger Time',
