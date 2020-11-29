@@ -6,6 +6,7 @@ import CounterHook from '../features/customHook/counterHook';
 import LocalStorageHook from '../features/customHook/localStorageHook';
 import AsyncLoadingHook from '../features/customHook/asyncLoadingHook';
 import SetStateTriggerTime from '../features/setStateTriggerTime';
+import ProperUseCallback from '../features/properUseCallback';
 
 // redux
 import Counter from '../features/counter/Counter';
@@ -28,6 +29,7 @@ export const REACT_ROUTES: RouteData = {
     'localStorageHook',
     'asyncLoadingHook',
     'setStateTriggerTime',
+    'properUseCallback',
   ],
   data: {
     playground: {
@@ -54,6 +56,11 @@ export const REACT_ROUTES: RouteData = {
       name: 'set State Trigger Time',
       route: 'set-state-trigger-time',
       comp: SetStateTriggerTime,
+    },
+    properUseCallback: {
+      name: 'Proper useCallback',
+      route: 'proper-use-callback',
+      comp: ProperUseCallback,
     },
   },
 };
