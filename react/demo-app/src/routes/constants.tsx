@@ -9,6 +9,7 @@ import SetStateTriggerTime from '../features/setStateTriggerTime';
 
 // redux
 import Counter from '../features/counter/Counter';
+import MockRedux from '../features/mockRedux';
 
 export interface RouteData {
   order: string[];
@@ -59,12 +60,17 @@ export const REACT_ROUTES: RouteData = {
 };
 
 export const REDUX_ROUTES: RouteData = {
-  order: ['counter'],
+  order: ['counter', 'mockRedux'],
   data: {
     counter: {
       name: 'Redux Counter',
       route: 'counter',
       comp: Counter,
+    },
+    mockRedux: {
+      name: 'Mock Redux',
+      route: 'mock-redux',
+      comp: MockRedux,
     },
   },
 };

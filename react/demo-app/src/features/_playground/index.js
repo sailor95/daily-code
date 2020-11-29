@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../ui-utils/styles-template.module.scss';
+import styles from '../ui-kits/styles-template.module.scss';
 
 const Playground = () => {
   return (
