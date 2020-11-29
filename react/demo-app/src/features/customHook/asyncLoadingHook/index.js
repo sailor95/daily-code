@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import styles from '../../ui-utils/styles-template.module.scss';
+import styles from '../../ui-kits/styles-template.module.scss';
 
 const useAsyncLoadingHook = (secret, query) => {
   const [images, addImages] = useState([]);
