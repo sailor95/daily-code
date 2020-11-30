@@ -55,6 +55,10 @@ Array:
 
 - 1277
 
+Math:
+
+- 1442 (Still need to process the O(n^2) solution again)
+
 ## Rand notes
 
 - Depth-first
