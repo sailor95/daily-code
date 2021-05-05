@@ -5,6 +5,7 @@ import Playground from '../features/_playground';
 import CounterHook from '../features/customHook/counterHook';
 import LocalStorageHook from '../features/customHook/localStorageHook';
 import AsyncLoadingHook from '../features/customHook/asyncLoadingHook';
+import UsePreviousState from '../features/customHook/usePreviousState';
 import SetStateTriggerTime from '../features/setStateTriggerTime';
 import ProperUseCallback from '../features/properUseCallback';
 import UseReducerHook from '../features/useReducerHook';
@@ -33,6 +34,7 @@ export const REACT_ROUTES: RouteData = {
     'useReducerHook',
     'setStateTriggerTime',
     'properUseCallback',
+    'usePreviousStateHook',
   ],
   data: {
     playground: {
@@ -69,6 +71,11 @@ export const REACT_ROUTES: RouteData = {
       name: 'Proper useCallback',
       route: 'proper-use-callback',
       comp: ProperUseCallback,
+    },
+    usePreviousStateHook: {
+      name: 'Use Previous State Hook',
+      route: 'use-prev-state-hook',
+      comp: UsePreviousState,
     },
   },
 };

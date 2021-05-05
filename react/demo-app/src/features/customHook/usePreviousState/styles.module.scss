@@ -1,0 +1,11 @@
+.container {
+  padding-top: 500px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .current {
+    margin-bottom: 20px;
+  }
+}
