@@ -1,3 +1,3 @@
-# Daily Practice
+# Daily Code
 
-ABC! (Always be coding!)
+Miscellaneous coding notes of mine.
