@@ -1,3 +1,3 @@
 # Daily Code
 
-Miscellaneous coding notes of mine.
+Misc. coding notes of mine.
