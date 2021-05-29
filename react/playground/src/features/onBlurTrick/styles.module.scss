@@ -1,0 +1,22 @@
+.container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  height: 30px;
+  padding: 4px;
+  color: #000;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.show {
+  margin-top: 30px;
+  font-size: 30px;
+}

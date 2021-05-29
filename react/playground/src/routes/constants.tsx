@@ -10,6 +10,7 @@ import SetStateTriggerTime from '../features/setStateTriggerTime'
 import ProperUseCallback from '../features/properUseCallback'
 import UseReducerHook from '../features/useReducerHook'
 import UseImperativeHandle from '../features/useImperativeHandle'
+import OnBlurTrick from '../features/onBlurTrick'
 
 // redux
 import Counter from '../features/counter/Counter'
@@ -37,6 +38,7 @@ export const REACT_ROUTES: RouteData = {
     'properUseCallback',
     'usePreviousStateHook',
     'useImperativeHandle',
+    'onBlurTrick',
   ],
   data: {
     playground: {
@@ -80,9 +82,14 @@ export const REACT_ROUTES: RouteData = {
       comp: UsePreviousState,
     },
     useImperativeHandle: {
-      name: 'UseImperativeHandle Hook',
+      name: 'Use ImperativeHandle Hook',
       route: 'use-imperative-handle',
       comp: UseImperativeHandle,
+    },
+    onBlurTrick: {
+      name: 'OnBlur Trick',
+      route: 'on-blur-trick',
+      comp: OnBlurTrick,
     },
   },
 }
