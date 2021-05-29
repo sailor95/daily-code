@@ -1,28 +1,29 @@
-import { ComponentType } from 'react';
+import { ComponentType } from 'react'
 
 // react
-import Playground from '../features/_playground';
-import CounterHook from '../features/customHook/counterHook';
-import LocalStorageHook from '../features/customHook/localStorageHook';
-import AsyncLoadingHook from '../features/customHook/asyncLoadingHook';
-import UsePreviousState from '../features/customHook/usePreviousState';
-import SetStateTriggerTime from '../features/setStateTriggerTime';
-import ProperUseCallback from '../features/properUseCallback';
-import UseReducerHook from '../features/useReducerHook';
+import Playground from '../features/_playground'
+import CounterHook from '../features/customHook/counterHook'
+import LocalStorageHook from '../features/customHook/localStorageHook'
+import AsyncLoadingHook from '../features/customHook/asyncLoadingHook'
+import UsePreviousState from '../features/customHook/usePreviousState'
+import SetStateTriggerTime from '../features/setStateTriggerTime'
+import ProperUseCallback from '../features/properUseCallback'
+import UseReducerHook from '../features/useReducerHook'
+import UseImperativeHandle from '../features/useImperativeHandle'
 
 // redux
-import Counter from '../features/counter/Counter';
-import MockRedux from '../features/mockRedux';
+import Counter from '../features/counter/Counter'
+import MockRedux from '../features/mockRedux'
 
 export interface RouteData {
-  order: string[];
+  order: string[]
   data: {
     [propName: string]: {
-      name: string;
-      route: string;
-      comp: ComponentType<{}>;
-    };
-  };
+      name: string
+      route: string
+      comp: ComponentType<{}>
+    }
+  }
 }
 
 export const REACT_ROUTES: RouteData = {
@@ -35,6 +36,7 @@ export const REACT_ROUTES: RouteData = {
     'setStateTriggerTime',
     'properUseCallback',
     'usePreviousStateHook',
+    'useImperativeHandle',
   ],
   data: {
     playground: {
@@ -77,8 +79,13 @@ export const REACT_ROUTES: RouteData = {
       route: 'use-prev-state-hook',
       comp: UsePreviousState,
     },
+    useImperativeHandle: {
+      name: 'UseImperativeHandle Hook',
+      route: 'use-imperative-handle',
+      comp: UseImperativeHandle,
+    },
   },
-};
+}
 
 export const REDUX_ROUTES: RouteData = {
   order: ['counter', 'mockRedux'],
@@ -94,4 +101,4 @@ export const REDUX_ROUTES: RouteData = {
       comp: MockRedux,
     },
   },
-};
+}

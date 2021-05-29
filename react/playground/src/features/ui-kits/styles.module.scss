@@ -34,3 +34,20 @@
     background-color: rgba(112, 76, 182, 0.2);
   }
 }
+
+button {
+  width: 300px;
+  height: 48px;
+  background: #9c24c7;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    background: #792299;
+  }
+}
